@@ -1,0 +1,38 @@
+ToDo list:
+- write method for finding out if the players next move is a winner. Model.StopperAI
+	most often beats the given RandomAI strategy. This new strategy could first goes for its own win if 
+	possible and if not. Definitely should try to block any human's attempt to win (cannot if there are two
+	ways to win)
+- write battles showing the statistics between the two stratagies simulated playing 1000 games
+
+- Graphical view doesn't have buttons so it relies on mouse clicks to tell where the user selected
+-must also make sure the user is notified when there is a winner
+
+
+- if any Jpanels will need to be updated, make sure they are observable, so the oberserver 
+	can notify all other observables. Add to the observable list in OurObservable
+	
+- work on persistance. Play several games and keep score
+
+-write JMenu options
+	-Change AI
+	-Change view
+	-Battles
+	-new game option
+	-
+	
+	
+	
+	
+	
+	left off at:
+	- need to figure out when to call notifyAllObservers()
+	 figure out how to read in stats from GameStatistics to GUI and write stats 
+	 from GUI to GameStatisitcs. 
+	 then figure out how to display the statistics
+	-then work on writing the battle statistics
+	-then work on the other view panel with paint componenet. 
+	
+	
+	notifyObservers() is called in TicTacToeGame.choose and restarting the Game.
+	choose selects a position on the board to be taken. 
